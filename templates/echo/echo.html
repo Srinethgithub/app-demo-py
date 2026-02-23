@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Echo Demo</title>
+    <title>Echo - {{ method }}</title>
 </head>
 <body>
     <h1>Method: {{ method }}</h1>
-    <p>Name1: {{ name1 }}</p>
-    <p>Name2: {{ name2 }}</p>
-    <p>DOB: {{ dob }}</p>
+    {% if name1 %}
+        <p>Name1: {{ name1 }}</p>
+    {% endif %}
+    {% if name2 %}
+        <p>Name2: {{ name2 }}</p>
+    {% endif %}
+    {% if dob %}
+        <p>DOB: {{ dob }}</p>
+    {% endif %}
 </body>
 </html>
