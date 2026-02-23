@@ -1,2 +1,4 @@
 Flask==2.1.2
 python-dotenv==0.20.0
+Werkzeug<3.0  # or Werkzeug==2.3.8
+pytest  # optional, but add if you want deps together
